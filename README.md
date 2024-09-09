@@ -1,12 +1,28 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<h1>Installation</h1>
+<h1>Installation and Initialization</h1>
 
 <ul>
-     <li>npm install</li>
-     <li>npm install -D tailwindcss postcss autoprefixer</li>
-     <li>npx tailwindcss init -p</li>
-     <li>(optional) composer require barryvdh/laravel-debugbar --dev</li>
+    <li>Install npm:</li>
+    <pre>npm install</pre>
+    <li>Install and initialize TailwindCSS:</li>
+    <pre>npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p</pre>
+    <li>Add the following to tailwind.config.js:</li>
+      <pre>content: [
+    "./resources/**/*.blade.php",
+    "./resources/**/*.js",
+    "./resources/**/*.vue",
+],</pre>
+    <li>resources/css/app.css:</li>
+    <pre>@tailwind base;
+@tailwind components;
+@tailwind utilities;</pre>
+    <li>(optional) Add debugbar for troubleshooting:</li>
+    <pre>composer require barryvdh/laravel-debugbar --dev</pre>
+    <li>Initialize npm and Laravel</li>
+    <pre>php artisan serve
+npm run dev</pre>
 </ul>
 
 <h1>Feature List</h1>
