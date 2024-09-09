@@ -39,3 +39,6 @@ npm run dev</pre>
     <li>Backend/Controller: Laravel</li>
     <li>Frontend/View: Blade with TailwindCSS</li>
 </ul>
+
+<h1>Preview</h1>
+<img src="https://i.imgur.com/Uq1fBM2.png">
